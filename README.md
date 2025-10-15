@@ -35,10 +35,14 @@ npm start
 
 ## 使用方法
 
-### 基本使用
 
-![使用图例1](https://static.jyshare.com/images/runoob-logo.png)
+### 基本使用演示
 
+![使用图例1](https://github.com/limingjun1092/Li7z/releases/download/IMG/1.png)
+
+![使用图例2](https://github.com/limingjun1092/Li7z/releases/download/IMG/2.png)
+
+![使用图例3](https://github.com/limingjun1092/Li7z/releases/download/IMG/3.png)
 
 
 
