@@ -6,7 +6,7 @@
 
 - 正常解压缩
 - Devtools可用
-- 旧Windows支持
+- 旧Windows支持 （Windows 7 X64 ）
 
 
 ## 安装说明
@@ -90,4 +90,23 @@ Li7z/
 ### v1.2.1 (2025-10-15)
 - 版本发布
 - 实现基础功能
+
+
+
+
+
+
+
+
+
+
+
+
+Oi！你知道吗！接下来的是彩蛋！
+
+
+# 彩蛋
+
+你知道吗？我们曾试着自己压缩自己！
+![“自压缩”](https://github.com/limingjun1092/Li7z/releases/download/IMG/4.png)
 
