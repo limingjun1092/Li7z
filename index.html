@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li7z - 解压缩软件</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Li7z</h1>
+            <p>基于7z的快速解压缩工具</p>
+        </div>
+        
+        <div class="content">
+            <div class="left-panel">
+                <div class="drop-area" id="dropArea">
+                    <i>📁</i>
+                    <p>拖放压缩文件到这里</p>
+                    <p>或</p>
+                    <button class="button" id="browseButton">浏览文件</button>
+                </div>
+                
+                <div class="file-info" id="fileInfo">
+                    <h3>文件信息</h3>
+                    <p id="fileName">未选择文件</p>
+                    <p id="filePath">路径: -</p>
+                    <p id="fileSize">大小: -</p>
+                    <p id="fileCount">文件数: -</p>
+                </div>
+                
+                <div class="actions">
+                    <button class="button primary" id="extractButton" disabled>解压全部</button>
+                    <button class="button" id="extractSelectedButton" disabled>解压选中</button>
+                    <button class="button" id="openFolderButton" disabled>打开位置</button>
+                    <button class="button warning hidden" id="cancelButton">取消解压</button>
+                    <button class="button primary" id="compressButton">压缩</button>
+                </div>
+                
+                <div class="status-bar">
+                    <div id="statusMessage">准备就绪</div>
+                    <div class="progress-bar">
+                        <div class="progress" id="progressBar"></div>
+                    </div>
+                    <div id="progressText">0%</div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <h3>压缩包内容</h3>
+                <div class="file-list-container">
+                    <div class="file-list-header">
+                        <div class="file-name">文件名</div>
+                        <div class="file-size">大小</div>
+                        <div class="file-date">修改日期</div>
+                    </div>
+                    <div class="file-list" id="fileList">
+                        <div class="empty-state">
+                            <p>请选择压缩文件查看内容</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

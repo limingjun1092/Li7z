@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新建压缩包</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>新建压缩包</h1>
+            <p>选择文件/文件夹及压缩参数</p>
+        </div>
+        <div class="content">
+            <div class="left-panel">
+                <div class="actions">
+                    <button class="button" id="addFileButton">添加文件</button>
+                    <button class="button" id="addFolderButton">添加文件夹</button>
+                </div>
+                <div class="actions">
+                    <div id="sourceList" style="margin-top:10px;">
+                        <span>已选文件/文件夹：</span>
+                        <ul id="selectedSources" style="list-style:none;padding-left:0;"></ul>
+                    </div>
+                </div>
+                <div class="actions">
+                    <label>压缩格式：</label>
+                    <select id="format">
+                        <option value="zip">ZIP</option>
+                        <option value="7z">7Z</option>
+                        <option value="tar">TAR</option>
+                        <option value="gz">GZ</option>
+                        <option value="bz2">BZ2</option>
+                        <option value="xz">XZ</option>
+                        <option value="iso">ISO</option>
+                        <option value="img">IMG</option>
+                        <option value="wim">WIM</option>
+                    </select>
+                </div>
+                <div class="actions">
+                    <label>压缩等级：</label>
+                    <select id="level">
+                        <option value="1">最快</option>
+                        <option value="3">普通</option>
+                        <option value="5">标准</option>
+                        <option value="7">高</option>
+                        <option value="9">极限</option>
+                    </select>
+                </div>
+                <div class="actions">
+                    <label>压缩密码：</label>
+                    <input type="password" id="password" placeholder="可选">
+                </div>
+                <div class="actions">
+                    <button class="button" id="selectOutput">选择输出路径</button>
+                    <span id="outputPath">未选择</span>
+                </div>
+                <div class="actions" id="labelAction" style="display:none;">
+                    <label>卷标：</label>
+                    <input type="text" id="labelInput" placeholder="自定义卷标">
+                </div>
+                <div class="actions">
+                    <button class="button primary" id="startCompress" disabled>开始压缩</button>
+                </div>
+                <div class="status-bar">
+                    <div id="compressStatus">等待压缩</div>
+                    <div class="progress-bar">
+                        <div class="progress" id="compressProgressBar"></div>
+                    </div>
+                    <div id="compressProgressText">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="compress.js"></script>
+</body>
+</html>
